@@ -11,17 +11,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.App {
-  text-align: center;
-  padding: 20px;
-}
-
-.counter {
-  margin: 20px;
-}
-
-input {
-  margin-bottom: 10px;
-  padding: 5px;
-}
-

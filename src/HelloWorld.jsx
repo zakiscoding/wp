@@ -1,15 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class List extends Component {
-  renderList() {
-    return this.props.items.map(item => (
-      <li key={item.name}>{item.name}</li>
-    ));
-  }
+const HelloWorld = (props) => {
+  return <h1>Hello, {props.name}!</h1>;
+};
 
-  render() {
-    return <ul>{this.renderList()}</ul>;
-  }
-}
-
-export default List;
+export default HelloWorld;

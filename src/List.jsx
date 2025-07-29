@@ -1,21 +1,21 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 class List extends Component {
   renderList() {
-    const items = this.props.items.map(item => {
-      return <li key={item.name}>{item.name}</li>
-    });
+    const { items } = this.props;
 
-    return items;
+    if (!items || items.length === 0) {
+      return <li>No items to display.</li>;
+    }
+
+    return items.map(item => (
+      <li key={item.name}>{item.name}</li>
+    ));
   }
 
   render() {
-    return (
-      <ul>
-        {this.renderList()}
-      </ul>
-    );
+    return <ul>{this.renderList()}</ul>;
   }
 }
 
-export default List; 
+export default List;
